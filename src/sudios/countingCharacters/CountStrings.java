@@ -6,8 +6,9 @@ import java.util.Map;
 
 public class CountStrings {
     public static void main(String[] args) {
+        int count = 0;
 
-            String passage = "If the product of two terms is zero then common sense says at least one " +
+        String passage = "If the product of two terms is zero then common sense says at least one " +
                     "of the two terms has to be zero to start with. So if you move all the terms over to " +
                     "one side, you can put the quadratics into a form that can be factored allowing that side " +
                     "of the equation to equal zero. Once you’ve done that, it’s pretty straightforward from there.";
@@ -15,7 +16,6 @@ public class CountStrings {
             char[] characterToString = passage.toCharArray();
 
         HashMap<Character, Integer> countLetters = new HashMap<>();
-        int count = 0;
 
         for (int i = 0; i < characterToString.length; i++) {
                 if(countLetters.containsKey(characterToString[i])) {
